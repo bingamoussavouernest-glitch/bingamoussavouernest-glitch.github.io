@@ -1,111 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fit Express - Programme Sportif</title>
+  <title>Programme Fit Express - ATLAS FORMATION</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
       color: #333;
-      text-align: center;
     }
     header {
-      background: #2c3e50;
-      color: white;
+      background: #0073e6;
+      color: #fff;
       padding: 20px;
+      text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
+    header img {
+      max-width: 120px;
     }
-    header p {
-      margin: 5px 0 0;
+    main {
+      padding: 20px;
+      text-align: center;
     }
-    section {
-      padding: 40px 20px;
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      max-width: 600px;
     }
     .btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #27ae60;
-      color: white;
-      font-size: 1.2em;
-      border: none;
+      margin: 10px;
+      padding: 12px 24px;
+      background: #0073e6;
+      color: #fff;
       border-radius: 8px;
-      cursor: pointer;
       text-decoration: none;
+      transition: background 0.3s;
     }
     .btn:hover {
-      background: #219150;
+      background: #005bb5;
     }
-    form {
-      max-width: 400px;
-      margin: 0 auto;
-      text-align: left;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    form label {
-      display: block;
-      margin: 10px 0 5px;
-    }
-    form input {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    .whatsapp-btn {
+    footer {
+      text-align: center;
+      padding: 15px;
       margin-top: 20px;
-      display: inline-block;
-      background: #25D366;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
+      background: #eee;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>🔥 Fit Express 🔥</h1>
-    <p>Transformez votre corps en 30 jours, même avec un emploi du temps chargé</p>
+    <img src="logo.png" alt="Logo ATLAS FORMATION">
+    <h1>Programme Fit Express</h1>
+    <h2>ATLAS FORMATION</h2>
   </header>
 
-  <section>
-    <h2>💪 Rejoignez le programme Fit Express</h2>
-    <p>Prix unique : <strong>20 000 FCFA</strong></p>
+  <main>
+    <div class="card">
+      <h2>Prix : 20 000 FCFA</h2>
+      <p>Un programme rapide et efficace pour rester en forme malgré un emploi du temps chargé.</p>
+      <a href="#inscription" class="btn">Je m'inscris</a>
+      <a href="https://wa.me/242065814431?text=Bonjour%2C%20je%20veux%20m'inscrire%20au%20Programme%20Fit%20Express" class="btn">Rejoignez-nous</a>
+    </div>
 
-    <!-- Formulaire d'inscription -->
-    <form action="https://formspree.io/f/mwkggkve" method="POST">
-      <label>Nom :</label>
-      <input type="text" name="nom" required>
-      <label>Prénom :</label>
-      <input type="text" name="prenom" required>
-      <label>Email :</label>
-      <input type="email" name="email" required>
-      <label>Téléphone :</label>
-      <input type="tel" name="telephone" required>
+    <div id="inscription" class="card">
+      <h2>Formulaire d'inscription</h2>
+      <form>
+        <input type="text" name="nom" placeholder="Votre nom" required><br><br>
+        <input type="email" name="email" placeholder="Votre email" required><br><br>
+        <input type="tel" name="telephone" placeholder="Votre téléphone" required><br><br>
+        <button type="submit" class="btn">Valider mon inscription</button>
+      </form>
+    </div>
+  </main>
 
-      <button type="submit" class="btn">✅ Je m’inscris</button>
-    </form>
-
-    <!-- Paiement Mobile Money -->
-    <p style="margin-top:20px;">👉 Payez directement par Mobile Money MTN :</p>
-    <p><strong>+242 06 581 4431</strong></p>
-    <p>(Binga Moussavou Ernest)</p>
-
-    <!-- Lien WhatsApp direct -->
-    <a class="whatsapp-btn" href="https://wa.me/242065814431?text=Bonjour%2C%20je%20veux%20m'inscrire%20au%20programme%20Fit%20Express">📲 Contactez-nous sur WhatsApp</a>
-  </section>
+  <footer>
+    <p>&copy; 2025 ATLAS FORMATION - Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
